@@ -15,7 +15,7 @@ void setup() {
   fullScreen();
   background(33);
   //noStroke(); //use with boule class
-  stroke(100);
+  stroke(175);
   frameRate(30);
 
   for (int i=0; i<NB; i++) {
