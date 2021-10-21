@@ -54,13 +54,13 @@ void keyPressed() {
       } else {
         l[i].speed = -tab1[count];
       }
-      
+
       if (hl[i].speed>0) {
         hl[i].speed = tab2[count];
       } else {
         hl[i].speed = -tab1[count];
       }
-      
+
       count --;
     }
   }
