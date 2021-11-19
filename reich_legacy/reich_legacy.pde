@@ -10,7 +10,7 @@ hline [] hl = new hline[NB2];
 float [] tab1 = new float [NB];
 float [] tab2 = new float [NB];
 
-void setup() {
+void setup() { 
   //size(500, 500); //use to dev
   fullScreen();
   background(33);
