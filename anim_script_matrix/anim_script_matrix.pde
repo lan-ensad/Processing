@@ -2,7 +2,9 @@ int nbX = 15;
 int nbY = 15;
 int size = 20;
 
-float steps = 1;
+float stepsR = 1;
+float stepsG =1;
+float stepsB = 1;
 
 int now, lastTrigR, lastTrigG, lastTrigB;
 int interval = 100;
@@ -19,23 +21,23 @@ void draw() {
 
     if(now-lastTrigG >= interval){
         lastTrigG = now;
-        g+=steps;
+        g+=stepsG;
         if(g>=255 || g<=0){
-            steps =-steps;
+            stepsG =-stepsG;
         }
     }
     if(now-lastTrigR >= interval-50){
         lastTrigR = now;
-        r+=steps;
+        r+=stepsR;
         if(r>=255 || r<=0){
-            steps =-steps;
+            stepsR =-stepsR;
         }
     }
     if(now-lastTrigB >= interval+507){
         lastTrigB = now;
-        b+=steps;
+        b+=stepsB;
         if(b>=255 || b<=0){
-            steps =-steps;
+            stepsB =-stepsB;
         }
     }
     println("Red : "+r+" - Green : " + g + " - Blue : "+b);
